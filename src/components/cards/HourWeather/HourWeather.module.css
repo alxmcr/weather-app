@@ -4,13 +4,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  min-width: 6rem;
+  min-width: 7rem;
   padding: 0.5rem 0;
 }
 
 .HourWeatherImage {
   display: block;
-  font-size: 1rem;
   margin: 0 auto;
   text-align: center;
   width: 4.5rem;
