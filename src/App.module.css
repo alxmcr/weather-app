@@ -1,4 +1,11 @@
 .App {
-    background-color: black;
-    color: white;
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
