@@ -1,3 +1,39 @@
-.Title {
-    color: gold;
+.HomeTitle {
+  text-align: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.FormButtonSearch {
+  appearance: none;
+  background-color: black;
+  color: white;
+  display: block;
+  font-weight: 700;
+}
+
+.FormButtonSearch:hover {
+  background-color: var(--brand-secondary);
+  color: white;
+  transform: scale(1.03);
+  transition: transform 1.2s;
+}
+
+.FormButtonSearch,
+.FormInputSearch {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 1rem 0.8rem;
+  width: 100%;
+}
+
+.FormLabel {
+  display: block;
 }
