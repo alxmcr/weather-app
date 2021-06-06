@@ -64,7 +64,7 @@ HTML, CSS, JavaScript, React.js
   
 ## Demo
 
-[https://weather-app.netlify.app/](https://weather-app.netlify.app/)
+[https://the-current-weather-app.netlify.app/](https://the-current-weather-app.netlify.app/)
 
   
 ## Authors
