@@ -1,3 +1,5 @@
+import { faCloud, faMapMarkedAlt, faTint, faWind } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { basicFormatDateStr } from "helpers/dateHelpers";
 import { useTodayWeather } from "hooks/useTodayWeather";
 import styles from './TodayWeather.module.css'
@@ -12,7 +14,7 @@ const TodayWeather = ({ nameCity = '' }) => {
         <div className={styles.Today}>
             <div className={styles.TodayHeader}>
                 <div className={styles.TodayLocation}>
-                    <i className="fas fa-map-marker-alt"></i>
+                    <FontAwesomeIcon icon={faMapMarkedAlt} />
                     <h3 className={styles.TodayLocationDetails}>
                         {todayWeather.location.name}
                     </h3>
@@ -38,19 +40,25 @@ const TodayWeather = ({ nameCity = '' }) => {
             </div>
             <div className={styles.TodayFooter}>
                 <div className={styles.TodayNatureInfo}>
-                    <i className={`fas fa-wind ${styles.TodayIcon}`}></i>
+                    <i className={styles.TodayIcon}>
+                        <FontAwesomeIcon icon={faWind} />
+                    </i>
                     <p className={styles.TodayNatureEvent}>
                         {todayWeather.current.wind_kph} Km/h
                     </p>
                 </div>
                 <div className={styles.TodayNatureInfo}>
-                    <i className={`fas fa-tint ${styles.TodayIcon}`}></i>
+                    <i className={styles.TodayIcon}>
+                        <FontAwesomeIcon icon={faTint} />
+                    </i>
                     <p className={styles.TodayNatureEvent}>
                         {todayWeather.current.humidity}%
                     </p>
                 </div>
                 <div className={styles.TodayNatureInfo}>
-                    <i className={`fas fa-cloud ${styles.TodayIcon}`}></i>
+                    <i className={styles.TodayIcon}>
+                        <FontAwesomeIcon icon={faCloud} />
+                    </i>
                     <p className={styles.TodayNatureEvent}>
                         {todayWeather.current.cloud}%
                     </p>
