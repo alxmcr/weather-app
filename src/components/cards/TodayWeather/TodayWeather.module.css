@@ -1,0 +1,83 @@
+.Today {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.TodayBody {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.TodayFooter {
+  background-color: black;
+  border-radius: 0.5rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.2rem;
+  padding: 0.5rem 0;
+}
+
+.TodayHeader {
+  background-color: black;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem;
+}
+
+.TodayIcon {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.TodayLastUpdated {
+  font-size: 0.8rem;
+}
+
+.TodayLocation {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.TodayLocationDetails {
+  font-weight: 700;
+}
+
+.TodayLocationDetails,
+.TodayLastUpdated {
+  margin: 0;
+}
+
+.TodayNameCondition {
+  margin: 0;
+  font-weight: 0.8rem;
+  text-align: center;
+}
+
+.TodayNatureEvent {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.TodayTemperature {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+}
