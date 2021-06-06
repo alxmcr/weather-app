@@ -1,0 +1,30 @@
+.HourWeather {
+  border-right: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 6rem;
+  padding: 0.5rem 0;
+}
+
+.HourWeatherImage {
+  display: block;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 4.5rem;
+}
+
+.HourWeatherTemperature {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.HourWeatherTime {
+  color: #5e5555;
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+}
