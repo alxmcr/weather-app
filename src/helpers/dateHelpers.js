@@ -1,5 +1,5 @@
 const basicFormatDateStr = (dateStr, locale) => {
-    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    const options = { timeZone: 'UTC', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
     const date = convertDateStrToDate(dateStr)
     return date.toLocaleDateString(locale, options);
 }
