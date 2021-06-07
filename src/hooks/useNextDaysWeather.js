@@ -11,8 +11,7 @@ const useNextDaysWeather = (nameCity = '', days = 7) => {
             .then(response => response.json())
             .then(data => {
                 const { error } = data;
-                console.log("getCurrentForecastByCity-data", data);
-                console.log("error", error);
+
                 if (error === undefined) {
                     const forecast = data ? data.forecast : null;
                     const forecastday = forecast ? [...forecast.forecastday] : []

@@ -12,8 +12,6 @@ const TodayWeather = ({ nameCity = '' }) => {
         return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
     }
 
-    console.log({ todayWeather });
-
     return (
         <div className={styles.Today}>
             <div className={styles.TodayHeader}>

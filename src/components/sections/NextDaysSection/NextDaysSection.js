@@ -10,7 +10,6 @@ const NextDaysSection = ({ nameCity = '' }) => {
         return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
     }
 
-    console.log({ nextDays });
     return (
         <section className={styles.NextDaysSection}>
             <h2 className={styles.NextDaysTitle}>Next days</h2>

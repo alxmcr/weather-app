@@ -10,8 +10,6 @@ const ForecastByDaySection = ({ nameCity = '' }) => {
         return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
     }
 
-    console.log({ forecastByDay })
-
     return (
         <section className={styles.ForecastByDaySection}>
             <h2>Next Hours</h2>

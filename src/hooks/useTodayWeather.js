@@ -11,7 +11,6 @@ export function useTodayWeather(nameCity = '') {
             .then(response => response.json())
             .then(data => {
                 const { error } = data;
-                console.log("error", error);
                 if (error === undefined) {
                     setWeather(data)
                 } else {
