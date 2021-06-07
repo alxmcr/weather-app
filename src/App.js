@@ -7,7 +7,9 @@ function App() {
     <BrowserRouter>
       <div className={styles.App}>
         <SwitchRoutesApp />
-        Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+        <p className={styles.AppPoweredBy}>
+          Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+        </p>
       </div>
     </BrowserRouter>
   );

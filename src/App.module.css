@@ -3,6 +3,10 @@
   margin-bottom: 2rem;
 }
 
+.AppPoweredBy {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .App {
     width: 80%;
