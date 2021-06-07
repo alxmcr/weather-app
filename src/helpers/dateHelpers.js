@@ -40,13 +40,9 @@ const showDetailsDateTime = (date) => {
     return data.join(" ")
 }
 
-const extractTimeStrFromDate = (dateStr) => {
-    const date = convertDateStrToDateUTC(dateStr)
-    const options = { hour: '2-digit', minute: '2-digit' };
-    // const hours = date.getHours();
-    // const minutes = date.getMinutes();
-
-    return date.toLocaleTimeString([], options)
+const extractTimeStrFromDate = (dateStr = '') => {
+    const parts = dateStr.split(" ")
+    return parts.length > 1 ? parts[1] : ''
 }
 
 const resetTime = (date) => {
