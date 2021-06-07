@@ -6,7 +6,9 @@ const ForecastByDaySection = ({ nameCity = '' }) => {
     const [forecastByDay, loading, error] = useForecastByDay(nameCity)
 
     if (loading) return <p>Loading the weather for next hours...</p>
-    if (error) return <p>I'm so sorry, there was an error. Please, try again.</p>
+    if (error !== null) {
+        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+    }
 
     console.log({ forecastByDay })
 

@@ -8,7 +8,9 @@ const TodayWeather = ({ nameCity = '' }) => {
     const [todayWeather, loading, error] = useTodayWeather(nameCity);
 
     if (loading) return <p>Loading the today's weather for {nameCity}</p>
-    if (error) return <p>I'm so sorry, there was an error. Please, try again.</p>
+    if (error !== null) {
+        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+    }
 
     console.log({ todayWeather });
 

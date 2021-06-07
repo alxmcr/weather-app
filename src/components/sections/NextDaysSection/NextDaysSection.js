@@ -6,7 +6,9 @@ const NextDaysSection = ({ nameCity = '' }) => {
     const [nextDays, loading, error] = useNextDaysWeather(nameCity)
 
     if (loading) return <p>Loading the nextDays for {nameCity}</p>
-    if (error) return <p>I'm so sorry, there was an error. Please, try again.</p>
+    if (error !== null) {
+        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+    }
 
     console.log({ nextDays });
     return (

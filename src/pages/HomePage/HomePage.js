@@ -8,7 +8,10 @@ export const HomePage = () => {
     const [searching, setSearching] = useState(false);
     const [nameCity, setNameCity] = useState("");
 
-    const handleNameCity = (e) => setNameCity(e.target.value);
+    const handleNameCity = (e) => {
+        setSearching(false);
+        setNameCity(e.target.value);
+    }
     const handleSearch = (e) => {
         e.preventDefault();
         setSearching(true)

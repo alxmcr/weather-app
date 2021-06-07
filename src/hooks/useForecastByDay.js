@@ -11,7 +11,8 @@ const useForecastByDay = (nameCity = '') => {
             .then(response => response.json())
             .then(data => {
                 const { error } = data;
-                if (error !== null || error !== undefined) {
+                console.log("error", error);
+                if (error === undefined) {
                     const forecast = data ? data.forecast : null;
                     const forecastday = forecast !== null || forecast !== undefined
                         ? [...forecast.forecastday]
