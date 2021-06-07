@@ -7,9 +7,15 @@ import styles from './TodayWeather.module.css'
 const TodayWeather = ({ nameCity = '' }) => {
     const [todayWeather, loading, error] = useTodayWeather(nameCity);
 
-    if (loading) return <p>Loading the today's weather for {nameCity}</p>
+    if (loading) {
+        return (
+            <p className={styles.TodayInfoMSG}>Loading the today's weather for {nameCity.toUpperCase()}</p>
+        )
+    }
     if (error !== null) {
-        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        return (
+            <p className={styles.TodayErrorMSG}>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        )
     }
 
     return (

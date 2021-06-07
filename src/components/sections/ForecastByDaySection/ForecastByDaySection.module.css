@@ -26,3 +26,17 @@
 .ForecastByDayHours::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
+
+.ForecastByDayErrorMSG {
+  background-color: rgb(207, 72, 72);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ForecastByDayInfoMSG {
+  background-color: rgb(238, 230, 160);
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}

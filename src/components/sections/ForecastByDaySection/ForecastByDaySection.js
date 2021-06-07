@@ -5,9 +5,15 @@ import styles from './ForecastByDaySection.module.css'
 const ForecastByDaySection = ({ nameCity = '' }) => {
     const [forecastByDay, loading, error] = useForecastByDay(nameCity)
 
-    if (loading) return <p>Loading the weather for next hours...</p>
+    if (loading) {
+        return (
+            <p className={styles.ForecastByDayInfoMSG}>Loading the forecast for {nameCity.toUpperCase()}</p>
+        )
+    }
     if (error !== null) {
-        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        return (
+            <p className={styles.ForecastByDayErrorMSG}>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        )
     }
 
     return (

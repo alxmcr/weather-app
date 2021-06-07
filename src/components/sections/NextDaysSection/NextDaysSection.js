@@ -5,9 +5,15 @@ import styles from './NextDaysSection.module.css'
 const NextDaysSection = ({ nameCity = '' }) => {
     const [nextDays, loading, error] = useNextDaysWeather(nameCity)
 
-    if (loading) return <p>Loading the nextDays for {nameCity}</p>
+    if (loading) {
+        return (
+            <p className={styles.NextDaysInfoMSG}>Loading the information about weather in next days for {nameCity.toUpperCase()}</p>
+        )
+    }
     if (error !== null) {
-        return <p>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        return (
+            <p className={styles.NextDaysErrorMSG}>I'm so sorry, there was an error. {error.message} Please, try again.</p>
+        )
     }
 
     return (
