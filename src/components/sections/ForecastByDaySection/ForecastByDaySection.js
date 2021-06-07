@@ -8,21 +8,23 @@ const ForecastByDaySection = ({ nameCity = '' }) => {
     if (loading) return <p>Loading the weather for next hours...</p>
     if (error) return <p>I'm so sorry, there was an error. Please, try again.</p>
 
+    console.log({ forecastByDay })
+
     return (
         <section className={styles.ForecastByDaySection}>
             <h2>Next Hours</h2>
             {
 
-                forecastByDay.hour 
-                ? (
-                    <div className={styles.ForecastByDayHours}>
-                        {
-                            forecastByDay.hour.map((hourWeather, index) => (
-                                <HourWeather key={index} weather={hourWeather} />
-                            ))
-                        }
-                    </div>
-                ) : <p>There isn't any information about next hours.</p>
+                forecastByDay.hour
+                    ? (
+                        <div className={styles.ForecastByDayHours}>
+                            {
+                                forecastByDay.hour.map((hourWeather, index) => (
+                                    <HourWeather key={index} weather={hourWeather} />
+                                ))
+                            }
+                        </div>
+                    ) : <p>There isn't any information about next hours.</p>
             }
         </section>
     )

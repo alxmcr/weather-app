@@ -8,6 +8,7 @@ const NextDaysSection = ({ nameCity = '' }) => {
     if (loading) return <p>Loading the nextDays for {nameCity}</p>
     if (error) return <p>I'm so sorry, there was an error. Please, try again.</p>
 
+    console.log({ nextDays });
     return (
         <section className={styles.NextDaysSection}>
             <h2 className={styles.NextDaysTitle}>Next days</h2>
