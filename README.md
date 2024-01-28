@@ -59,8 +59,14 @@ HTML, CSS, JavaScript, React.js
   
 ## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1623008099/Portfolio/weather-app-images/weather-app_yupard.png)
+- Home page
 
+![image](https://github.com/alxmcr/weather-app/assets/8689897/831df28b-2de9-4827-b63e-a2fa3fcc791c)
+
+  
+- Forecast page
+
+![image](https://github.com/alxmcr/weather-app/assets/8689897/088756eb-0158-4995-812a-dcbd63c32206)
   
 ## Demo
 
